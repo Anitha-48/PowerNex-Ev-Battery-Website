@@ -1,0 +1,5 @@
+.pcard{background:#fff;border-radius:16px;overflow:hidden;box-shadow:var(--sh);display:flex;flex-direction:column;transition:.3s}.pcard:hover{transform:translateY(-6px)}
+.pimg{height:190px;overflow:hidden}.pcard:hover .visual,.pcard:hover .vimg{transform:scale(1.1)}
+.pbody{padding:20px;display:flex;flex-direction:column;gap:8px;flex:1;align-items:flex-start}.pbody h3{color:var(--navy);font-size:1.05rem}.pbody p{font-size:.88rem;color:#51627a;flex:1}
+.pact{display:flex;gap:8px;flex-wrap:wrap;margin-top:8px}.pact .btn{padding:9px 16px;font-size:.82rem}
+@media(max-width:560px){.pbody{padding:16px}.pact{width:100%}.pact .btn{flex:1;min-width:0;min-height:44px;padding:10px 12px}}

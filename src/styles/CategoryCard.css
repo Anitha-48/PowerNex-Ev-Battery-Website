@@ -1,0 +1,5 @@
+.ccard{display:block;background:#fff;border-radius:16px;overflow:hidden;box-shadow:var(--sh);transition:.3s;height:100%}.ccard:hover{transform:translateY(-6px);box-shadow:0 18px 40px rgba(7,27,51,.18)}
+.cimg{height:170px;overflow:hidden}.ccard:hover .visual,.ccard:hover .vimg{transform:scale(1.12)}
+.cbody{padding:20px}.cbody h3{font-size:1.02rem;color:var(--navy);margin-bottom:6px}.cbody p{font-size:.88rem;color:#51627a;margin-bottom:12px}
+.clink{color:var(--blue);font-weight:600;font-size:.88rem}.ccard:hover .clink{color:var(--orange)}
+@media(max-width:560px){.cbody{padding:16px}.cimg{height:150px}}

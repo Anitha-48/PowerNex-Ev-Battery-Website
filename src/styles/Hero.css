@@ -1,0 +1,15 @@
+.hero{position:relative;min-height:100vh;display:flex;align-items:center;overflow:hidden;color:#fff;background:var(--navy)}
+.hero::after{content:"";position:absolute;inset:0;z-index:1;background:linear-gradient(120deg,rgba(7,27,51,.82),rgba(7,27,51,.62)),repeating-linear-gradient(90deg,transparent 0 59px,rgba(255,255,255,.04) 59px 60px),repeating-linear-gradient(0deg,transparent 0 59px,rgba(255,255,255,.04) 59px 60px);pointer-events:none}
+.hero-video{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:0}
+/* To use a photo: add url("/hero.jpg") as the last gradient layer above, and put hero.jpg in /public */
+.glow{position:absolute;border-radius:50%;filter:blur(90px);opacity:.5;animation:pulse 6s ease-in-out infinite}
+.g1{width:420px;height:420px;background:var(--blue);top:-100px;right:-80px}.g2{width:320px;height:320px;background:var(--orange);bottom:-100px;left:20%;opacity:.3;animation-delay:2s}
+@keyframes pulse{50%{transform:scale(1.2);opacity:.7}}
+.pt{position:absolute;bottom:-10px;width:4px;height:4px;border-radius:50%;background:var(--orange);box-shadow:0 0 10px var(--orange);animation:rise linear infinite}
+@keyframes rise{to{transform:translateY(-105vh);opacity:0}}
+.fl{position:absolute;width:62px;height:62px;border-radius:16px;display:grid;place-items:center;color:var(--orange);background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.15);backdrop-filter:blur(6px)}
+.hero-in{position:relative;z-index:2;padding-top:90px}
+.hero h1{font-size:clamp(2.3rem,6.5vw,4.8rem);font-weight:800;line-height:1.1;max-width:900px}.wmask{display:inline-block;overflow:hidden;vertical-align:top}.wmask span{display:inline-block}
+.hero p{max-width:640px;margin:22px 0 32px;font-size:1.1rem;color:#cfdcf0}.hero-btn{display:flex;gap:14px;flex-wrap:wrap;margin-top:12px}
+@media(max-width:768px){.fl{display:none}.hero{min-height:82vh}.hero-in{padding-top:110px}.hero h1{max-width:620px}.hero p{display:none}.hero-btn{flex-direction:column;align-items:flex-start;margin-top:28px}.hero .hero-btn .btn{width:auto;min-height:48px;padding:12px 24px;font-size:.92rem}}
+@media(max-width:520px){.hero-in{padding-top:120px}}

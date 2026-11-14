@@ -1,0 +1,5 @@
+.srow{display:grid;grid-template-columns:1fr 1fr;gap:50px;align-items:center;margin-bottom:70px}.srow.rev .simg{order:2}
+.simg{height:300px;border-radius:20px;overflow:hidden;box-shadow:var(--sh)}.srow:hover .visual{transform:scale(1.08)}
+.stxt h2{color:var(--navy);margin-bottom:10px}.stxt p{color:#51627a}.sbtn{display:flex;gap:12px;flex-wrap:wrap;margin-top:20px}
+@media(max-width:860px){.srow{grid-template-columns:1fr;gap:24px;margin-bottom:50px}.srow.rev .simg{order:0}.simg{height:220px}}
+@media(max-width:520px){.sbtn{flex-direction:column}.sbtn .btn{width:100%}.stxt h2{font-size:1.7rem}.simg{height:200px}}
